@@ -15,7 +15,8 @@
 
 import 'package:charts_common/common.dart' as common
     show Legend, LegendState, SeriesLegend;
-import 'package:flutter/widgets.dart' show BuildContext, hashValues, Widget;
+// hashValues was deprecated in Dart 2.18 and removed in Dart 3.0
+// import \'package:flutter/widgets.dart\' show BuildContext, Widget;
 import 'legend.dart';
 import 'legend_entry_layout.dart';
 import 'legend_layout.dart';
@@ -88,5 +89,7 @@ class TabularLegendContentBuilder extends BaseLegendContentBuilder {
   }
 
   @override
-  int get hashCode => hashValues(legendEntryLayout, legendLayout);
+  // Updated to use Object.hash instead of deprecated hashValues
+
+  int get hashCode => Object.hash(legendEntryLayout, legendLayout);
 }

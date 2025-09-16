@@ -25,7 +25,8 @@ import 'package:charts_common/common.dart' as common
         RangeAnnotation,
         TextStyleSpec;
 import 'package:collection/collection.dart' show ListEquality;
-import 'package:flutter/widgets.dart' show hashValues;
+// hashValues was deprecated in Dart 2.18 and removed in Dart 3.0
+// import \'package:flutter/widgets.dart\' show hashValues;
 import 'package:meta/meta.dart' show immutable;
 
 import 'chart_behavior.dart' show ChartBehavior, GestureType;
@@ -115,7 +116,9 @@ class RangeAnnotation<D> extends ChartBehavior<D> {
   }
 
   @override
-  int get hashCode => hashValues(
+  // Updated to use Object.hash instead of deprecated hashValues
+
+  int get hashCode => Object.hash(
       annotations,
       defaultColor,
       extendAxis,
