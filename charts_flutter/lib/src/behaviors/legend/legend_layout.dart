@@ -16,7 +16,7 @@
 import 'dart:math' show min;
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:material/material.dart';
+import 'package:flutter/material.dart';
 
 /// Strategy for building legend from legend entry widgets.
 abstract class LegendLayout {
