@@ -30,6 +30,7 @@ import 'package:collection/collection.dart' show ListEquality;
 import 'package:meta/meta.dart' show immutable;
 
 import 'chart_behavior.dart' show ChartBehavior, GestureType;
+import 'package:flutter/material.dart';
 
 /// Chart behavior that annotations domain ranges with a solid fill color.
 ///

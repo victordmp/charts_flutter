@@ -22,7 +22,6 @@ import 'package:charts_common/common.dart' as common
         ChartBehavior;
 import 'package:meta/meta.dart' show immutable;
 import 'package:flutter/widgets.dart' show BuildContext, Widget;
-
 import '../base_chart_state.dart' show BaseChartState;
 
 /// Flutter wrapper for chart behaviors.

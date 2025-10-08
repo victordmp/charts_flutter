@@ -20,6 +20,7 @@ import 'package:flutter/widgets.dart'
 import 'line_style.dart' show LineStyle;
 import 'text_element.dart' show TextElement;
 import 'text_style.dart' show TextStyle;
+import 'package:flutter/material.dart' show BuildContext;
 
 class GraphicsFactory implements common.GraphicsFactory {
   final double textScaleFactor;

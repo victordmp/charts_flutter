@@ -19,6 +19,7 @@ import 'package:charts_common/common.dart' as common
 import 'package:flutter/widgets.dart';
 import 'chart_canvas.dart' show ChartCanvas;
 import 'graphics_factory.dart' show GraphicsFactory;
+import 'package:flutter/material.dart';
 
 /// Flutter widget responsible for painting a common SymbolRenderer from the
 /// chart.
